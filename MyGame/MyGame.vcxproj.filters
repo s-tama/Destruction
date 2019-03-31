@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Game">
+      <UniqueIdentifier>{8ef94316-1fb2-40a1-b61d-d33f285b6443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FBX">
+      <UniqueIdentifier>{d60f408b-3049-4744-ae06-be4ebcb20d3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes">
+      <UniqueIdentifier>{acf7a4f4-95ca-4bc2-8287-ec5bf527273d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameWorld">
+      <UniqueIdentifier>{7b554eb8-499a-49f6-8fb7-811b00b90cf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\UIWorld">
+      <UniqueIdentifier>{58c01bc0-8a67-41a0-ba07-65da2601a2de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameWorld\Camera">
+      <UniqueIdentifier>{deca6e06-3700-449b-9feb-bc05046cb32c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameWorld\SampleObj2D">
+      <UniqueIdentifier>{c545352f-cdd2-4c28-91f3-fe205f840533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Shader">
+      <UniqueIdentifier>{f8610995-807d-4b06-b5b8-c982e292bb0a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="Game\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Scenes\SampleScene.cpp">
+      <Filter>Game\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameWorld\MainCamera.cpp">
+      <Filter>Game\GameWorld\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameWorld\SampleObj.cpp">
+      <Filter>Game\GameWorld\SampleObj2D</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Scenes\SampleScene.h">
+      <Filter>Game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameWorld\MainCamera.h">
+      <Filter>Game\GameWorld\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameWorld\SampleObj.h">
+      <Filter>Game\GameWorld\SampleObj2D</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MeshContentTask Include="FBX\sample.FBX">
+      <Filter>FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="FBX\floor.FBX">
+      <Filter>FBX</Filter>
+    </MeshContentTask>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Game\Shader\Simple.hlsli">
+      <Filter>Game\Shader</Filter>
+    </None>
+    <None Include="Game\Shader\MyShader.hlsli">
+      <Filter>Game\Shader</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Game\Shader\SimpleVS.hlsl">
+      <Filter>Game\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Game\Shader\SimplePS.hlsl">
+      <Filter>Game\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Game\Shader\SimpleGS.hlsl">
+      <Filter>Game\Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
